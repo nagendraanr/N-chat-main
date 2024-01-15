@@ -1,0 +1,27 @@
+<div id="chatbox"></div>
+<input class="typing" id="userInput" type="text" placeholder="Type your message here...">
+                                <button id="sendButton" onclick="sendMessage()">Send</button>
+    
+                                    <script>
+        
+        
+                                        function sendMessage() {
+                                        var input = document.getElementById('userInput');
+                                        var chatbox = document.getElementById('chatbox');
+                                        // User1 message
+                                        chatbox.innerHTML += '<div class="message-container user1-message">' +
+                                        '<span class="user-label">User1:</span> ' +
+                                        '<span class="message">' + input.value + '</span></div>';
+                                        var lowerCaseInput = input.value.toLowerCase();
+                                        if (lowerCaseInput in messages) {
+                                        // User2 reply
+                                        var reply = messages[lowerCaseInput][Math.floor(Math.random() * messages[lowerCaseInput].length)];
+                                        chatbox.innerHTML += '<div class="message-container user2-message">' +
+                                        '<span class="user-label">User2:</span> ' +
+                                        '<span class="message">' + reply + '</span></div>';
+                                        }
+                                        input.value = '';
+                                        chatbox.scrollTop = chatbox.scrollHeight;
+                                        }
+                                        
+                                    </script>

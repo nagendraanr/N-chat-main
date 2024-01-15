@@ -1,0 +1,138 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-image: url(online\ chat\ BG.jpg);
+}
+header {
+    padding: 20px;
+    background-color: #FF7F50;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 98%;
+}
+button {
+    margin: 0 10px;
+    padding: 10px 20px;
+    transition: transform 0.3s ease;
+    background-color: yellow;
+    border: none;
+    border-radius: 20px;
+}
+button:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+#chatbox {
+    width: 800px;
+    height: 500px;
+    border: 1px solid #000;
+    margin: 20px auto;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: lightsteelblue;
+    margin-bottom: -10px;
+    margin-top: 0;
+    margin-bottom: 0;
+    color: blue;
+}
+#userInput {
+    width: 800px;
+    margin: 10px auto;
+    display: inline-block;
+    padding: 10px;
+    margin-left: 207px;
+    margin-bottom: 150px;
+    margin-top: 5px;
+    height: 15px;
+}
+#sendButton {
+    display: inline-block;
+    margin: 10px auto;
+    padding: 5px 10px;
+    margin-left: 5px;
+}
+footer {
+    padding: 0px;
+    background-color: #FF7F50;
+    text-align: center;
+    color: white;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+img {
+    transition: transform 0.3s ease;
+    border-radius: 7px;
+    box-shadow: 5px 5px 10px 5px black;
+}
+img:hover {
+    transform: scale(1.1);
+}
+.myimage {
+    position: absolute;
+    top: 35%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    width: 40%;
+    height: 30%;
+    margin-left: 30px;
+}
+/* .photo {
+    position: absolute;
+    top: 35%;
+    left: 20%;
+    transform: translate(+50%, +50%);
+    width: 10%;
+    height: 30%;
+    margin-left: 250px;
+} */
+.typing {
+    margin-left: 300;
+}
+.no-underline {
+    text-decoration: none;
+}
+#chatbox {
+    overflow-y: auto;
+    max-height: 300px;
+}
+.message-container {
+    margin-bottom: 10px;
+}
+.user1-message {
+    text-align: right;
+    color: #3498DB;
+}
+.user2-message {
+    text-align: left;
+    color: #2ECC71;
+}
+#chatbox {
+    overflow-y: auto;
+    max-height: 300px;
+}
+.message-container {
+    margin-bottom: 10px;
+}
+.user1-message {
+    text-align: right;
+    /* color: #3498DB; */
+    color: black;
+}
+.user2-message {
+    text-align: left;
+    color: blue;
+}
+.user-label {
+    font-weight: bold;
+    margin-right: 5px;
+}
+.message {
+    display: inline-block;
+    background-color: #ECF0F1;
+    padding: 8px;
+    border-radius: 5px;
+}
